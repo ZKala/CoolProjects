@@ -10,6 +10,7 @@
  display: flex;
  font-size: 1.5rem;
  height: 4rem;
+ justify-content: space-evenly;
  overflow: hidden;
  padding: 0rem 2rem;
  position: sticky; 
@@ -33,16 +34,22 @@
 }
 
 .contact{
- padding: 0 2rem;
- 
+ padding: 0.5rem 0.8rem;
+ background-color: rgba(101, 251, 85, 0.5);
+ border-radius: 0.5rem;
+}
+
+.contact:hover{
+ background-color: rgba(170, 240, 124, 0.9);
+ text-decoration: underline;
+ transition: 0.1s ease-in;
 }
 
 .kusinalogo{
  border-radius: 2rem;
  height: 5rem;
- left: 2;
- margin-right: 5rem;
- position: relative;
+ left: 2rem;
+ position: absolute;
 }
 
 /* end of navbar */
