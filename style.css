@@ -50,7 +50,7 @@
 
 /* header */
 .header{
- background: url(./Kusinaphotos/headerphoto.webp) center no-repeat fixed;
+ background: url(/Kusinaphotos/headerphoto.webp) center no-repeat fixed;
  justify-content: center;
  min-height: calc(100vh - 4rem);
  text-align: center;
@@ -107,7 +107,7 @@
 
 /* second section */
 .halo2{
- background: url(./Kusinaphotos/halo2.webp) center no-repeat fixed;
+ background: url(/Kusinaphotos/halo2.webp) center no-repeat fixed;
  min-height: 100vh;
  display: flex;
  align-items: center;
