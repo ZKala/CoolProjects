@@ -40,7 +40,7 @@
 .kusinalogo{
  border-radius: 2rem;
  height: 5rem;
- left: 10px;
+ left: 2;
  margin-right: 5rem;
  position: relative;
 }
@@ -58,16 +58,18 @@
 
 .headerlogo{
  border-radius: 50%;
- position: relative;
  display: flex;
  margin: 0 auto;
+ position: relative;
  top: 8rem;
 }
 
 .headertext{
- background: rgba(101, 251, 85, 0.529);
- /* color: lightgreen; */
+ background: rgba(101, 251, 85, 0.7);
+ border-radius: 0.4rem;
+ color: white;
  display: inline-block;
+ font-weight: 300;
  position: relative;
  top: 10rem;
  
@@ -75,6 +77,7 @@
 
 .motto{
  background: rgba(101, 251, 85, 0.529);
+ border-radius: 0.4rem;
  margin: 0 auto;
  position: relative;
  top: 11rem;
