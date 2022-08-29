@@ -1,0 +1,169 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+
+/* navbar */
+.navbar{
+ align-items: center;
+ background: white;
+ display: flex;
+ font-size: 1.5rem;
+ height: 4rem;
+ overflow: hidden;
+ padding: 0rem 2rem;
+ position: sticky; 
+ text-align: center;
+ top: 0;
+ width: 100%;
+ z-index: 10;
+}
+
+.home{
+ padding: 0 2rem;
+ 
+}
+
+.more{
+ padding: 0 2rem;
+}
+
+.socials{
+ padding: 0 2rem;
+}
+
+.contact{
+ padding: 0 2rem;
+ 
+}
+
+.kusinalogo{
+ border-radius: 2rem;
+ height: 5rem;
+ left: 10px;
+ margin-right: 5rem;
+ position: relative;
+}
+
+/* end of navbar */
+
+
+/* header */
+.header{
+ background: url(./Kusinaphotos/headerphoto.webp) center no-repeat fixed;
+ justify-content: center;
+ min-height: calc(100vh - 4rem);
+ text-align: center;
+}
+
+.headerlogo{
+ border-radius: 50%;
+ position: relative;
+ display: flex;
+ margin: 0 auto;
+ top: 8rem;
+}
+
+.headertext{
+ background: rgba(101, 251, 85, 0.529);
+ /* color: lightgreen; */
+ display: inline-block;
+ position: relative;
+ top: 10rem;
+ 
+}
+
+.motto{
+ background: rgba(101, 251, 85, 0.529);
+ margin: 0 auto;
+ position: relative;
+ top: 11rem;
+ width: fit-content;
+}
+
+/* end of header */
+
+/* First section */
+#first-section{
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ justify-content: center;
+ letter-spacing: 4px;
+ min-height: 80vh;
+}
+
+.welcome-text{
+ color: rgb(94, 155, 66);
+ font-size: 4rem;
+ font-weight: 400;
+ margin-bottom: 10px;
+}
+
+
+/* End of first section */
+
+
+/* second section */
+.halo2{
+ background: url(./Kusinaphotos/halo2.webp) center no-repeat fixed;
+ min-height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.halo2 h1{
+ font-size: 5rem;
+ font-weight: 400;
+ color: white;
+}
+
+/* end of second section */
+/* Third Section - The Menu */
+.menu{
+ align-items: center;
+ background: white;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ letter-spacing: 4px;
+ min-height: 40vh;
+}
+
+.menu h1{
+ font-size: 2.5rem;
+ font-weight: 300;
+}
+
+.menu p{
+ margin-top: 1.5rem;
+}
+
+/* End of third section - The Menu */
+
+/* Fourth Section - Choices */
+.choices{
+ display: flex;
+ justify-content: space-evenly;
+ min-height: 100vh;
+}
+
+.mains{
+ background: green;
+ position: relative;
+ width: 50%;
+ min-height: 100%;
+}
+
+.desserts{
+ background: lightgreen;
+ width: 50%;
+}
+/* End of fourth section */
+
+/* Fifth Section - Other Menu*/
+
+
+/* End of Fifth Section */
