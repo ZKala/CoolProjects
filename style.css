@@ -110,7 +110,7 @@ html{
  text-align: center;
  text-transform: capitalize;
  letter-spacing: 0.5rem;
- margin-top: 2rem;
+ margin-top: -2rem;
  text-shadow: .2rem .3rem .3rem rgba(0, 0, 0, 0.521);
  z-index: 10;
 }
@@ -215,15 +215,114 @@ html{
  text-align: center;
  text-transform: capitalize;
  letter-spacing: 0.5rem;
- margin-top: 2rem;
+ margin-top: 3rem;
  text-shadow: .3rem .3rem .3rem #000;
 }
 
-.food-img{
- cursor: pointer;
- height: 30rem;
- width: 30rem;
- object-fit: cover;
- 
+.section3-text{
+ font-size: 2rem;
+ margin-top: 2rem;
+ text-align: center;
 }
+
+.gallery{
+ align-items: center;
+ display:flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ margin-top: 10rem;
+}
+
+.gallery-link{
+ position: relative;
+ margin: 4rem 1rem;
+}
+
+.gallery-link::before{
+ background-color: white;
+ content: "";
+ height: 80%;
+ position: absolute;
+ top: 2vw;
+ left: 80%;
+ width: .2rem;
+ transition: .5s;
+}
+
+.gallery-link:hover::before{
+ opacity: 1;
+ height: 80%;
+}
+
+.gallery-link::after{
+ background-color: white;
+ content: "";
+ height: .2rem;
+ left: 2rem;
+ position: absolute;
+ top: 30%;
+ transition: width .5s;
+ width: 90%;
+}
+
+.gallery-link:hover::after{
+ width: 80%;
+}
+
+.food-img{
+ box-shadow: .3rem .3rem .1rem #29e969, .5rem .5rem .1rem #a2e946, .7rem .7rem .1rem #29e989, .9rem .9rem .1rem #29e9c9;
+ cursor: pointer;
+ height: 15vw;
+ width: 24vw;
+ object-fit: cover;
+ transition: all 0.5s;
+}
+
+.gallery-link:hover .food-img{
+ box-shadow: 1rem 1rem .1rem #e92929, 2rem 2rem .1rem #a2e946, 3rem 3rem .1rem #297ce9, 4rem .4rem .1rem #e92999;
+ filter: blur(.5rem);
+ opacity: .5;
+}
+
+.food-name{
+ position: absolute;
+ top:3rem;
+ left:3rem;
+ font-size: 2rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: .1rem;
+ color: white;
+ width: 0;
+ overflow: hidden;
+ transition: width 0.3s;
+}
+
+.gallery-link:hover .food-name{
+ width: 100%;
+ transition: width 1s .5s;
+}
+
+
+.food-description{
+ position: absolute;
+ bottom: 3vw;
+ left: 2rem;
+ width: 70%;
+ font-size: 1.5rem;
+ font-weight: 400;
+ letter-spacing: .1rem;
+ text-transform: uppercase;
+ color: white;
+ opacity: 0;
+ visibility: hidden;
+ transition: opacity .3s;
+}
+
+.gallery-link:hover .food-description{
+ opacity: 1;
+ visibility: visible;
+ transition: opacity 1s 1s;
+}
+
 /* End of Section 3*/
