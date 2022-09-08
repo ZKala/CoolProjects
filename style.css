@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Raleway:wght@100&display=swap');
 
 /* Common Styles */
 *{
@@ -29,7 +29,6 @@ html{
 
 .kusina-logo{
  border-radius: 50%;
- margin-top: -11rem;
 }
 
 .section-heading{
@@ -43,8 +42,13 @@ html{
 }
 
 .p-heading{
+ font-size: 2rem;
+ text-shadow: none;
+}
+.p-heading2{
  font-size: 1.5rem;
  text-shadow: none;
+ text-decoration: underline;
 }
 
 .section-1-images{
@@ -65,8 +69,32 @@ html{
 }
 /* End of Section 1 */
 
+/* Halo2 after 1st section */
+.halo2{
+ background: url(./Kusinaphotos/halo2.webp) center no-repeat fixed;
+ font-style: 'Cormorant Garamond', arial;
+ min-height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+#halo2-text{
+ color: white;
+ font-family: 'Cormorant Garamond', serif;
+ font-size: 6rem;
+ font-weight: 500;
+ letter-spacing: 0.2rem;
+ text-align: center;
+
+}
+
+/* Halo2 after 1st section */
+
+
 /*Section 2 */
 .section-2{
+ background-color: rgb(240, 240, 240);
  display: flex;
  flex-direction: column;
  height: 100vh;
@@ -76,17 +104,26 @@ html{
 }
 
 .section2-heading{
+ font-family: 'Cormorant Garamond', serif;
  font-size: 7rem;
  font-weight: 900;
  text-align: center;
  text-transform: capitalize;
  letter-spacing: 0.5rem;
  margin-top: 2rem;
- text-shadow: .3rem .3rem .3rem #000;
+ text-shadow: .2rem .3rem .3rem rgba(0, 0, 0, 0.521);
+ z-index: 10;
+}
+
+.section2-p{
+ font-size: 2rem;
+ margin-top: 2rem;
+ text-align: center;
 }
 
 .cards-container{
  display: flex;
+ margin-top: 15rem;
  transform: translatey(-7rem);
  justify-content: space-evenly;
 }
@@ -103,7 +140,7 @@ html{
  width: 30rem;
  position: relative;
  transform: rotateY(20deg) skewX(-.5deg);
- transition: 0.2s ease-in;
+ transition: 0.2s ease-in all;
 }
 
 .card:hover{
@@ -169,7 +206,24 @@ html{
 
 /*Section 3 */
 .section-3{
- background-color: rgb(240, 240, 240);
  height: 100vh;
+}
+
+.section3-heading{
+ font-size: 7rem;
+ font-weight: 900;
+ text-align: center;
+ text-transform: capitalize;
+ letter-spacing: 0.5rem;
+ margin-top: 2rem;
+ text-shadow: .3rem .3rem .3rem #000;
+}
+
+.food-img{
+ cursor: pointer;
+ height: 30rem;
+ width: 30rem;
+ object-fit: cover;
+ 
 }
 /* End of Section 3*/
