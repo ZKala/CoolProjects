@@ -241,17 +241,21 @@ html{
 .gallery-link::before{
  background-color: white;
  content: "";
- height: 80%;
+ height: 0;
  position: absolute;
  top: 2vw;
  left: 80%;
  width: .2rem;
- transition: .5s;
+ transition: height .5s;
+ z-index: 11;
 }
 
 .gallery-link:hover::before{
- opacity: 1;
  height: 80%;
+}
+
+.gallery-link:hover::after{
+ width: 90%;
 }
 
 .gallery-link::after{
@@ -261,13 +265,10 @@ html{
  left: 2rem;
  position: absolute;
  top: 30%;
- transition: width .5s;
- width: 90%;
+ transition: all .5s ease-in;
+ width: 0%;
 }
 
-.gallery-link:hover::after{
- width: 80%;
-}
 
 .food-img{
  box-shadow: .3rem .3rem .1rem #29e969, .5rem .5rem .1rem #a2e946, .7rem .7rem .1rem #29e989, .9rem .9rem .1rem #29e9c9;
@@ -279,9 +280,10 @@ html{
 }
 
 .gallery-link:hover .food-img{
- box-shadow: 1rem 1rem .1rem #e92929, 2rem 2rem .1rem #a2e946, 3rem 3rem .1rem #297ce9, 4rem .4rem .1rem #e92999;
- filter: blur(.5rem);
+ box-shadow: 1rem 1rem .1rem #29e969, 2rem 2rem .1rem #a2e946, 3rem 3rem .1rem #29e989, 4rem .4rem .1rem #29e9c9;
+ filter: blur(.3rem);
  opacity: .5;
+ transform: scale(1.1);
 }
 
 .food-name{
@@ -289,7 +291,7 @@ html{
  top:3rem;
  left:3rem;
  font-size: 2rem;
- font-weight: 700;
+ font-weight: 800;
  text-transform: uppercase;
  letter-spacing: .1rem;
  color: white;
@@ -310,7 +312,7 @@ html{
  left: 2rem;
  width: 70%;
  font-size: 1.5rem;
- font-weight: 400;
+ font-weight: 700;
  letter-spacing: .1rem;
  text-transform: uppercase;
  color: white;
@@ -320,9 +322,11 @@ html{
 }
 
 .gallery-link:hover .food-description{
+ background: rgba(176, 249, 131, 0.5); 
+ font-weight: 800;
  opacity: 1;
  visibility: visible;
- transition: opacity 1s 1s;
+ transition: opacity 0.6s 0.6s;
 }
 
 /* End of Section 3*/
