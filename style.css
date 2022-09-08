@@ -1,179 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Raleway:wght@100&display=swap');
+
+/* Common Styles */
 *{
  margin: 0;
  padding: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+ outline: none;
+ font-family: 'Raleway', sans-serif;
+ font-weight: 800;
 }
 
-/* navbar */
-.navbar{
- align-items: center;
- background: white;
- display: flex;
- font-size: 1.5rem;
- height: 4rem;
- justify-content: space-evenly;
- overflow: hidden;
- padding: 0rem 2rem;
- position: sticky; 
- text-align: center;
- top: 0;
+html{
+ font-size: 62.5%;
+}
+/* End of common styles */
+
+/* Section 1 */
+.section-1{
  width: 100%;
- z-index: 10;
-}
-
-.home{
- padding: 0 2rem;
- 
-}
-
-.more{
- padding: 0 2rem;
-}
-
-.socials{
- padding: 0 2rem;
-}
-
-.contact{
- padding: 0.5rem 0.8rem;
- background-color: rgba(101, 251, 85, 0.5);
- border-radius: 0.5rem;
-}
-
-.contact:hover{
- background-color: rgba(170, 240, 124, 0.9);
- text-decoration: underline;
- transition: 0.1s ease-in;
-}
-
-.kusinalogo{
- border-radius: 2rem;
- height: 5rem;
- left: 2rem;
- position: absolute;
-}
-
-/* end of navbar */
-
-
-/* header */
-.header{
- background: url(./Kusinaphotos/headerphoto.webp) center no-repeat fixed;
- justify-content: center;
- min-height: calc(100vh - 4rem);
- text-align: center;
-}
-
-.headerlogo{
- border-radius: 50%;
- display: flex;
- margin: 0 auto;
- position: relative;
- top: 8rem;
-}
-
-.headertext{
- background: rgba(101, 251, 85, 0.7);
- border-radius: 0.4rem;
- color: white;
- display: inline-block;
- font-weight: 300;
- position: relative;
- top: 10rem;
- 
-}
-
-.motto{
- background: rgba(101, 251, 85, 0.529);
- border-radius: 0.4rem;
- margin: 0 auto;
- position: relative;
- top: 11rem;
- width: fit-content;
-}
-
-/* end of header */
-
-/* First section */
-#first-section{
- align-items: center;
+ height: 100vh;
+ background-color: rgb(240, 240, 240);
  display: flex;
  flex-direction: column;
- text-align: center;
- justify-content: center;
- letter-spacing: 4px;
- min-height: 80vh;
-}
-
-.welcome-text{
- color: rgb(94, 155, 66);
- font-size: 4rem;
- font-weight: 400;
- margin-bottom: 10px;
-}
-
-
-/* End of first section */
-
-
-/* second section */
-.halo2{
- background: url(./Kusinaphotos/halo2.webp) center no-repeat fixed;
- min-height: 100vh;
- display: flex;
  align-items: center;
- justify-content: center;
-}
-
-.halo2 h1{
- font-size: 5rem;
- font-weight: 400;
- color: white;
-}
-
-/* end of second section */
-/* Third Section - The Menu */
-.menu{
- align-items: center;
- background: white;
- display: flex;
- flex-direction: column;
- justify-content: center;
- letter-spacing: 4px;
- min-height: 40vh;
-}
-
-.menu h1{
- font-size: 2.5rem;
- font-weight: 300;
-}
-
-.menu p{
- margin-top: 1.5rem;
-}
-
-/* End of third section - The Menu */
-
-/* Fourth Section - Choices */
-.choices{
- display: flex;
  justify-content: space-evenly;
- min-height: 100vh;
 }
 
-.mains{
- background: green;
+.kusina-logo{
+ border-radius: 50%;
+ margin-top: -11rem;
+}
+
+.section-heading{
+ font-size: 7rem;
+ font-weight: 900;
+ text-align: center;
+ text-transform: capitalize;
+ letter-spacing: 0.5rem;
+ margin-top: -3rem;
+ text-shadow: .3rem .3rem .3rem #000;
+}
+
+.p-heading{
+ font-size: 1.5rem;
+ text-shadow: none;
+}
+
+.section-1-images{
+ background-size: contain;
+}
+.section-1-images img{
+ border-radius: 20%;
+ background-size: contain;
+ height: 30rem;
+ object-fit: cover;
+ position: absolute;
+ transform: translate(-50%,-50%) scale(0);
+ text-shadow: .2rem .2rem .2rem #000;
+}
+
+.section-1-images img.change{
+ transform: translate(-50%,-50%) scale(1);
+}
+/* End of Section 1 */
+
+/*Section 2 */
+.section-2{
+ display: flex;
+ flex-direction: column;
+ height: 100vh;
+ justify-content: space-between;
+ width: 100%;
+ padding: 10rem 0;
+}
+
+.section2-heading{
+ font-size: 7rem;
+ font-weight: 900;
+ text-align: center;
+ text-transform: capitalize;
+ letter-spacing: 0.5rem;
+ margin-top: 2rem;
+ text-shadow: .3rem .3rem .3rem #000;
+}
+
+.cards-container{
+ display: flex;
+ transform: translatey(-7rem);
+ justify-content: space-evenly;
+}
+
+.card{
+ align-items: center;
+ background-color: #54a72d66;
+ box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.526);
+ display: flex;
+ flex-direction: column;
+ height: 35rem;
+ padding: 4rem;
+ justify-content: space-between;
+ width: 30rem;
  position: relative;
- width: 50%;
- min-height: 100%;
+ transform: rotateY(20deg) skewX(-.5deg);
+ transition: 0.2s ease-in;
 }
 
-.desserts{
- background: lightgreen;
- width: 50%;
+.card:hover{
+ box-shadow: 2rem 2rem 2rem #000;
+ transform: rotateY(20deg) skewX(-1deg) translateY(-3rem);
 }
-/* End of fourth section */
 
-/* Fifth Section - Other Menu*/
+.card::before{
+ background-color: #34812495;
+ content:"";
+ height: 100%;
+ width: 1rem;
+ position: absolute;
+ top: 0;
+ left: -1rem;
+ transform: skewY(45deg);
+ transform-origin: right;
+}
+.card::after{
+ background-color: #34812495;
+ content:"";
+ height: 1rem;
+ width: 100%;
+ position: absolute;
+ top: -1rem;
+ left: 0;
+ transform: skewX(45deg);
+ transform-origin: bottom;
+}
 
+.card-img{
+ border-radius: 1rem;
+ width: 100%;
+ height: 30vh;
+ object-fit: cover;
+}
 
-/* End of Fifth Section */
+.card-name{
+ font-size: 3rem;
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: 0.5rem;
+ text-shadow: .15rem .15rem .15rem black;
+}
+
+.card-btn{
+ /* border-radius: 5rem; */
+ background-color: #111;
+ border: none;
+ cursor: pointer;
+ color: #888;
+ font-size: 1.5rem;
+ letter-spacing: .2rem;
+ padding: .5rem 0;
+ text-transform: capitalize;
+ width: 70%;
+}
+
+.card-btn:hover{
+ color: white;
+}
+/* End of Section 2*/
+
+/*Section 3 */
+.section-3{
+ background-color: rgb(240, 240, 240);
+ height: 100vh;
+}
+/* End of Section 3*/
