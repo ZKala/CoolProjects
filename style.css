@@ -106,6 +106,7 @@ html{
  position: absolute;
  top: -15rem;
  left: calc(50% - .15rem);
+ text-decoration: none;
 }
 /* End of Navbar */
 
