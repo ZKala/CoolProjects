@@ -23,12 +23,12 @@ html{
  box-shadow: .2rem .2rem .2rem lightgreen;
  display: flex;
  justify-content: center;
- height: 10rem;
+ height: 15rem;
  position: fixed;
- top: -11rem;
+ top: -13rem;
  width: 100%;
  transition: all .4s 0.2s;
- z-index: 17;
+ z-index: 111;
 }
 
 .navbar.change{
@@ -68,11 +68,11 @@ html{
 }
 
 .navbar-link i{
- font-size: 5rem;
+ font-size: 7rem;
 }
 
 .navbar-link span{
- font-size: 2.5rem;
+ font-size: 3rem;
  letter-spacing: .4rem;
  text-align: center;
  margin-top: .3rem;
@@ -83,17 +83,17 @@ html{
  border-radius: 30rem 30rem 15rem 15rem;
  box-shadow: .1rem .1rem .1rem #000, -.1rem -.1rem -.1rem #000;
  cursor: pointer;
- height: 7rem;
- width: 4rem;
+ height: 9rem;
+ width: 5rem;
  position: fixed;
- top: 2rem;
+ top: 7rem;
  left: 8rem;
  transition: all .4s;
- z-index: 16;
+ z-index: 100;
 }
 
 .menu.change{
- top: 11rem;
+ top: 16rem;
  transition: top 0.4s;
 }
 
@@ -104,7 +104,7 @@ html{
  width: .3rem;
  height: 16rem;
  position: absolute;
- top: -9rem;
+ top: -15rem;
  left: calc(50% - .15rem);
 }
 /* End of Navbar */
