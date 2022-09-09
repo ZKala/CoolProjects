@@ -16,6 +16,99 @@ html{
 }
 /* End of common styles */
 
+/* Navbar */
+.navbar{
+ align-items: center;
+ background-color: black;
+ box-shadow: .2rem .2rem .2rem lightgreen;
+ display: flex;
+ justify-content: center;
+ height: 10rem;
+ position: fixed;
+ top: -11rem;
+ width: 100%;
+ transition: all .4s 0.2s;
+ z-index: 17;
+}
+
+.navbar.change{
+ top: 0rem;
+}
+
+.navbar-link{
+ align-items: center;
+ color: white;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ margin: 0 4rem;
+ opacity: 0;
+ transition: color .3s, opacity .2s;
+}
+
+.change .navbar-link{
+ opacity: 1;
+}
+
+.change .navbar-link:nth-child(1){
+ transition: opacity .4s .5s, color .3s;
+}
+.change .navbar-link:nth-child(2){
+ transition: opacity .4s .6s, color .3s;
+}
+.change .navbar-link:nth-child(3){
+ transition: opacity .4s .7s, color .3s;
+}
+.change .navbar-link:nth-child(4){
+ transition: opacity .4s .8s, color .3s;
+}
+
+.navbar-link:hover{
+ color: lightgreen;
+}
+
+.navbar-link i{
+ font-size: 5rem;
+}
+
+.navbar-link span{
+ font-size: 2.5rem;
+ letter-spacing: .4rem;
+ text-align: center;
+ margin-top: .3rem;
+}
+
+.menu{
+ background-color: #000;
+ border-radius: 30rem 30rem 15rem 15rem;
+ box-shadow: .1rem .1rem .1rem #000, -.1rem -.1rem -.1rem #000;
+ cursor: pointer;
+ height: 7rem;
+ width: 4rem;
+ position: fixed;
+ top: 2rem;
+ left: 8rem;
+ transition: all .4s;
+ z-index: 16;
+}
+
+.menu.change{
+ top: 11rem;
+ transition: top 0.4s;
+}
+
+.menu::before{
+ background-color: black;
+ box-shadow: .1rem 0 .1rem #000;
+ content: "";
+ width: .3rem;
+ height: 16rem;
+ position: absolute;
+ top: -9rem;
+ left: calc(50% - .15rem);
+}
+/* End of Navbar */
+
 /* Section 1 */
 .section-1{
  width: 100%;
@@ -72,7 +165,7 @@ html{
 /* Halo2 after 1st section */
 .halo2{
  background: url(./Kusinaphotos/halo2.webp) center no-repeat fixed;
- font-style: 'Cormorant Garamond', arial;
+ font-family: 'Cormorant Garamond', arial;
  min-height: 100vh;
  display: flex;
  align-items: center;
@@ -330,3 +423,172 @@ html{
 }
 
 /* End of Section 3*/
+
+/* Section 4 */
+.section-4{
+ align-items: flex-start;
+ background-color: rgb(57, 177, 57);
+ display: flex;
+ height: 20vh;
+ justify-content: space-around;
+ width: 100%;
+ padding: 3rem 0;
+ position: relative;
+}
+
+.section-4-text{
+ text-transform: uppercase;
+}
+
+.section-4-heading{
+ font-family: 'Cormorant Garamond', arial;
+ font-size: 4rem;
+ font-weight: 900;
+ color: #005f30;
+}
+
+.section-4-paragraph{
+ font-size: 1.5rem;
+}
+
+.signup-form{
+ display: flex;
+ align-items: center;
+}
+
+.signup-form-input{
+ border: .2rem solid #a79a2d;
+ color: green;
+ font-size: 1.6rem;
+ font-weight: 700;
+ letter-spacing: .1rem;
+ width: 35rem;
+ height: 4rem;
+ padding: 1rem;
+}
+
+.signup-form-input::placeholder{
+ color: #a79a2d;
+}
+
+.signup-form-btn{
+ border: none;
+ cursor: pointer;
+ font-size: 1.8rem;
+ height: 3.5rem;
+ left: -4rem;
+ position: relative;
+ width: 3.5rem;
+}
+
+.copyright{
+ border-top: .1rem solid white;
+ color: white;
+ bottom: 1rem;
+ font-size: 1.3rem;
+ padding-top: 1rem;
+ position: absolute;
+ text-align: center;
+ width: 100%;
+}
+/* End of Section 4 */
+
+/* Responsive Screen Sizes*/
+@media(max-width: 1400px){
+ html{
+  font-size: 50%;
+ }
+ .section-2{
+  height: auto;
+  padding: 10rem 0 12rem 0;
+ }
+
+ .cards-container{
+  margin-top: 10rem;
+ }
+
+ .gallery-link{
+  width: 40rem;
+  height: 25rem;
+  margin: 5rem;
+ }
+
+ .food-img{
+  width: 100%;
+  height: 100%;
+ }
+}
+
+@media(max-width: 1000px) {
+ .section-heading{
+  font-size: 9rem;
+  margin: 0 5rem;
+ }
+
+ .section-1-images{
+  font-size: 2rem;
+ }
+
+ .cards-container{
+  flex-wrap: wrap;
+ }
+
+ .card{
+  margin: 5rem;
+ }
+
+ .section-4{
+  height: 30rem;
+ }
+}
+
+@media(max-width: 900px){
+ .navbar-link{
+  margin: 2rem;
+ }
+
+ .navbar-link i{
+  font-size: 4rem;
+ }
+
+ .navbar-link span{
+  font-size: 2rem;
+ }
+}
+
+@media(max-width: 700px) {
+ .section-heading{
+  font-size: 7rem;
+  margin: 0 10rem;
+ }
+
+ .section-1-images i{
+  font-size: 20rem;
+ }
+
+ .menu{
+  left: 2rem;
+ }
+
+ .section-4{
+  align-items: center;
+  flex-direction: column;
+  height: 40rem;
+  justify-content: flex-start;
+ }
+
+ .section-4-text{
+  margin-bottom: 8rem;
+ }
+}
+
+@media(max-width: 550px){
+ html{
+  font-size: 40%;
+ }
+
+.navbar-link{
+ margin: 0 .7rem;
+}
+}
+/* End of Responsive Screen Sizes */
