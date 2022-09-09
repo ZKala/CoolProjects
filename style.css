@@ -443,11 +443,16 @@ html{
  font-family: 'Cormorant Garamond', serif;
  font-size: 2rem;
  font-weight: 600;
- margin-top: 5rem;
+ margin-top: 7rem;
  position: absolute;
  top: 50%;
  left: 50%;
  transform: translate(-50%,-50%);
+ letter-spacing: .2rem;
+}
+
+.serving-text h1{
+ margin-bottom: 4rem;
 }
 
 .kusinaimg{
